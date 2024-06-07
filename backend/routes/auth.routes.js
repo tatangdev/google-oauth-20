@@ -7,7 +7,7 @@ router.post('/register', register);
 router.post('/login', login);
 router.get('/whoami', restrict, whoami);
 
-router.get('/google',
+router.get('/google', // https://example.com/api/v1/auth/google
     passport.authenticate('google', { scope: ['profile', 'email'] })
 );
 router.get('/google/callback',

@@ -74,7 +74,7 @@ module.exports = {
                 return res.status(400).json({
                     status: false,
                     message: 'Bad Request',
-                    err: 'It appears that you registered using Google OAuth. Please use Google OAuth to log in.',
+                    err: 'It appears that you registered using Google. Please use Google to log in.',
                     data: null
                 });
             } // check if user registered using google oauth
